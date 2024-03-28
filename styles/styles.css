@@ -1,0 +1,262 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "head head"
+    "nav  nav"
+    "section aside"
+    "contactform contactform"
+    "foot foot";
+  grid-gap: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1480px;
+  padding: 0 20px;
+}
+
+/*header content*/
+#head {
+  grid-area: head;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(192, 192, 192);
+  padding-bottom: 10px;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-decoration: underline;
+  font-size: 3rem;
+}
+
+.since {
+  margin-top: 0;
+  padding-top: 0;
+  color: whitesmoke;
+  font-size: .75rem;
+}
+
+nav {
+  grid-area: nav;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+nav>a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*left side content*/
+section {
+  background-color: rgb(192, 192, 192, 50%);
+  grid-area: section;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section>.photocite {
+  position: absolute;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.photocite {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+#photoabout>p {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 60px;
+  position: relative;
+}
+
+img {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+cite {
+  padding-top: 0;
+  margin-top: 0;
+
+}
+
+#places {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#places>p {
+  font-weight: 600;
+}
+
+ol>li {
+  padding-bottom: 5px;
+}
+
+#facts {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#facts>p {
+  font-weight: 600;
+}
+
+ul>li {
+  padding-bottom: 5px;
+}
+
+table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 5px;
+  border: 1px solid darkgray;
+}
+
+th,
+td,
+tr {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.theader {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+caption {
+  font-weight: 600;
+  font-size: .75rem;
+  padding-bottom: 5px;
+}
+
+/*right side content*/
+aside {
+  background-color: rgb(192, 192, 192, 50%);
+  grid-area: aside;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.subj {
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.note {
+  text-align: center;
+}
+
+/*footer content*/
+footer {
+  background-color: rgb(192, 192, 192);
+  grid-area: foot;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#addsrcs {
+  padding: 20px;
+}
+
+#addsrcs>p {
+  font-weight: 600;
+}
+
+#creator {
+  padding-top: 60px;
+  padding-right: 60px;
+}
+
+/*link formatting*/
+
+a {
+  color: chocolate;
+}
+
+a:hover {
+  color: blueviolet;
+  background-color: whitesmoke;
+}
+
+/*Contact form*/
+
+#contactform {
+  background-color: rgb(192, 192, 192, 50%);
+  grid-area: contactform;
+  padding: 40px 40px;
+  margin: auto;
+  width: 90%;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "name userinput";
+  gap: 15px;
+  justify-content: center;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+p > label {
+  grid-area: name;
+  font-weight: 600;
+}
+
+p>input{
+  grid-area: userinput;
+}
+
+.button {
+  height: 40px;
+  width: 100px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  text-decoration: underline;
+  : center;
+}

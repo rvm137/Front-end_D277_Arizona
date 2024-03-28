@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arizona</title>
+  <link href="./styles/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div id="head">
+    <header>
+      <h1>Arizona</h1>
+      <p class="since">-Since: February 14, 1912-</p>
+    </header>
+    <nav>
+      <a href="./index.html">Home</a>&nbsp;
+      <a href="./phoenix.html">Phoenix</a>&nbsp;
+      <a href="./flagstaff.html">Flagstaff</a>&nbsp;
+      <a href="./sedona.html">Sedona</a>&nbsp;
+    </nav>
+  </div>
+  <section>
+    <h2>Arizona</h2>
+    <div id="photoabout">
+      <div class="photocite">
+        <img src="./assets/robert-murray-9-WVTrFrlWI-unsplash.jpg" alt="Scottsdale Arizona desert sunset" height="200px">
+        <cite>Photo by
+          <a href="https://unsplash.com/@fastturtle?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Robert Murray</a> on <a href="https://unsplash.com/photos/brown-and-green-grass-9-WVTrFrlWI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Unsplash</a>
+        </cite>
+      </div>
+      <p>Arizona is a premier destination to experience out of this world sunrises and sunsets. Home to pro sports teams in
+      the five major categories: MLB, NFL, NBA, NHL, WNBA; you will never run out of things to do. Below are some top places
+      to visit, as well as some useless facts for the next night of trivia. Be warned, if you visit today, you may not want
+      to go back later; even with the heat.</p>
+    </div>
+    <div><hr></div>
+    <div id="places">
+      <p>Top Places to Visit in Arizona:</p>
+      <ol>
+        <li>The Grand Canyon National Park</li>
+        <li>Havasu Falls</li>
+        <li>Sedona Valley</li>
+      </ol>
+    </div>
+    <div><hr></div>
+    <div id="facts">
+      <p>Useless Facts on Arizona:</p>
+      <ul>
+        <li>Arizona is the 6th largest state in the U.S.</li>
+        <li>In the last 5 years at least one of the pro sports teams has made the playoffs.</li>
+        <li>If you search online "United States" and "Haboob/Dust Storm", majority of the video content will be from Arizona.
+        </li>
+      </ul>
+    </div>
+    <div id="table">
+      <hr>
+      <table>
+        <caption class="cap">Camp Verde is the central most city in the state.<br>Below is how long it takes to travel to the listed cities.</caption>
+        <thead>
+          <th></th>
+          <th class="theader">Las Vegas</th>
+          <th class="theader">Los Angeles</th>
+          <th class="theader">San Diego</th>
+          <th class="theader">Denver</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="theader">Driving</td>
+            <td>~4.5 hrs</td>
+            <td>~7 hrs</td>
+            <td>~6.5 hrs</td>
+            <td>~12 hrs</td>
+          </tr>
+          <tr>
+            <td class="theader">Flying</td>
+            <td>~1.25 hrs</td>
+            <td>~1.5 hrs</td>
+            <td>~1.25 hrs</td>
+            <td>~2 hrs</td>
+          </tr>
+          <tr>
+            <td class="theader">Hitchhiking</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <aside>
+    <p class="subj">Population</p>
+    <p class="note">~ 7.276 Million</p>
+    <div><hr></div>
+    <p class="subj">Year Incorporated</p>
+    <p class="note">1912</p>
+    <div><hr></div>
+    <p class="subj">Region</p>
+    <p class="note">Southwestern U.S.</p>
+    <div><hr></div>
+    <p class="subj">Classification</p>
+    <p class="note">Urban and Rural</p>
+    <div><hr></div>
+    <p class="subj">Average Individual Income</p>
+    <p class="note">~ $38,000</p>
+    <div><hr></div>
+    <p class="subj">Average Household Income</p>
+    <p class="note">~ $73,000</p>
+  </aside>
+  <div id="head">
+    <header>
+      <h1>Arizona</h1>
+      <p class="since">-Since: February 14, 1912-</p>
+    </header>
+    <nav>
+      <a href="./index.html">Home</a>&nbsp;
+      <a href="./phoenix.html">Phoenix</a>&nbsp;
+      <a href="./flagstaff.html">Flagstaff</a>&nbsp;
+      <a href="./sedona.html">Sedona</a>&nbsp;
+    </nav>
+  </div>
+  <div id="contactform">
+    <h2>Contact Us Today</h2>
+    <form action="" method="">
+      <p>
+        <label for="firstName">First Name: </label>
+      </p>
+      <p>
+        <input type="text" placeholder="John" id="firstName" name="firstName" required>
+      </p>
+      <p>
+        <label for="lastName">Last Name: </label>
+      </p>
+      <p>
+        <input type="text" placeholder="Doe" id="lastName" name="lastName" required>
+      </p>
+      <p>
+        <label for="email">Email: </label>
+      </p>
+      <p>
+        <input type="email" placeholder="john.doe@gmail.com" id="email" name="email" required>
+      </p>
+      <p>
+        <label for="emailConf">Confirm Email: </label>
+      </p>
+      <p>
+        <input type="email" placeholder="john.doe@gmail.com" id="emailConf" name="emailConf" onblur="confirmEmail()"
+          required>
+      </p>
+      <p>
+        <label for="question-comment">Questions/Comments: </label>
+      </p>
+      <p>
+        <textarea name="question-comment" id="question-comment" rows="8" cols="40"
+          placeholder="Type your question/comment here..."></textarea>
+      </p>
+      <br>
+      <input class="button" type="submit" value="Submit">
+      <script>
+        function confirmEmail() {
+          var email = document.getElementById("email").value;
+          var emailConf = document.getElementById("emailConf").value;
+          if (email != emailConf) {
+            alert("Email does not match!");
+          }
+
+        }
+      </script>
+    </form>
+  </div>
+  <footer>
+    <div id="addsrcs">
+      <p>Additional Resources:</p>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Arizona" target="_blank">Arizona Wikipedia</a></li>
+        <li><a href="https://www.census.gov/quickfacts/fact/table/AZ/HCN010217" target="_blank">U.S. Census Bureau, Arizona</a></li>
+      </ul>
+    </div>
+    <div id="creator">
+      <p>Created by: <strong><em>Rickey McIlrath</em></strong></p>
+    </div>
+  </footer>
+</body>
+</html>
